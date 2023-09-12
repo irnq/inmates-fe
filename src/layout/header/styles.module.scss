@@ -1,0 +1,10 @@
+@import '../../styles/abstract.scss';
+
+.header {
+  background: $color-light-blue;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 2rem;
+}

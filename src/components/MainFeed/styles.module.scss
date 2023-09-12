@@ -1,0 +1,23 @@
+@import '../../styles/abstract.scss';
+
+.feedWrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+  border-right: 1px solid $color-bg-light;
+  border-left: 1px solid $color-bg-light;
+  height: 100%;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.addPostWrapper {
+  padding: 0 5rem;
+}

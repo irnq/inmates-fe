@@ -1,0 +1,66 @@
+@import '../../styles/abstract.scss';
+
+.label {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+
+  &.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+
+    & .input {
+      width: 100%;
+    }
+  }
+
+  & .warningMessages {
+    font-size: 1.2rem;
+    color: $color-warning;
+    position: absolute;
+    bottom: -1.5rem;
+  }
+}
+
+.input {
+  width: 70%;
+  padding: 0.6rem;
+  border: 1px solid $color-bg-light;
+  border-radius: 4px;
+  transition: border 0.2s, background-color 0.2s;
+  outline: none;
+
+  &:focus {
+    border: 1px solid $color-light-blue;
+  }
+
+  &.warning {
+    animation: warningShake 0.3s ease-out 1;
+    border: 1px solid $color-warning;
+  }
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+@keyframes warningShake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateX(+2px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

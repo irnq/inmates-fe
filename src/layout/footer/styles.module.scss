@@ -1,0 +1,9 @@
+@import '../../styles/abstract.scss';
+
+.footer {
+  padding: 2rem;
+  background-color: $color-blue;
+  color: #fff;
+  display: flex;
+  justify-content: end;
+}

@@ -1,0 +1,32 @@
+$color-light: #f0f0f0;
+$color-grey: #929292;
+$color-blue: #0159a6;
+$color-light-blue: #4895d9;
+$color-dark-blue: #14314b;
+
+$color-bg-light: #d5e5f3;
+$color-bg-gradient: linear-gradient(to bottom, $color-light-blue, $color-dark-blue);
+
+$color-shadow: #d3d3d39c;
+
+$color-warning: #f07660;
+
+.button {
+  padding: 0.6rem 4rem;
+  font-size: 1.6rem;
+  background-color: $color-light;
+  border: 1px solid $color-grey;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background 0.1s;
+
+  &:active {
+    background-color: $color-light-blue;
+  }
+
+  &.primary {
+    background-color: $color-blue;
+    color: $color-light;
+  }
+}

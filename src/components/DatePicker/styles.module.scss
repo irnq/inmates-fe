@@ -1,0 +1,17 @@
+.label {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  align-items: center;
+
+  &.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0rem;
+  }
+
+  & .input {
+    padding: 0.7rem 0;
+    cursor: pointer;
+  }
+}

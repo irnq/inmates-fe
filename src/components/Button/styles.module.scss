@@ -1,0 +1,43 @@
+@import '../../styles/abstract.scss';
+
+.btn {
+  display: inline-block;
+  width: max-content;
+  padding: 0.5rem 2rem;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 5px;
+
+  &.text {
+    color: $color-blue;
+
+    &:hover {
+      background: $color-bg-light;
+    }
+  }
+
+  &.filled {
+    background: $color-blue;
+    color: #fff;
+    &:hover {
+      background: $color-light-blue;
+    }
+  }
+
+  &.elevated {
+    box-shadow: 0px 0px 6px 2px $color-shadow;
+    &:hover {
+      box-shadow: 0px 0px 6px 4px $color-shadow;
+    }
+  }
+
+  &.outlined {
+    border: 1px solid $color-blue;
+    color: $color-blue;
+    &:hover {
+      border: 1px solid $color-light-blue;
+      color: $color-light-blue;
+    }
+  }
+}

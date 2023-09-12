@@ -1,0 +1,18 @@
+@import '../../styles/abstract.scss';
+
+.card {
+  margin: 0 auto;
+  width: max-content;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 1rem $color-shadow;
+  padding: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color-blue;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/abstract.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 35rem;
+}
+
+.btnBlock {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
